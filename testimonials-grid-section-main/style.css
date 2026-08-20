@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #edf2f8;
+  font-size: 13px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 20px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.card-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid hsl(263, 55%, 52%);
+  margin-right: 10px;
+}
+
+.card-header .user-name,
+.card-header .user-status {
+  font-size: 15px;
+}
+
+.card-header .user-status {
+  opacity: 50%;
+}
+
+.user-lead {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.user-quote {
+  font-size: 15px;
+  opacity: 70%;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.card:nth-of-type(1) {
+  background-color: hsl(263, 55%, 52%);
+  color: #fff;
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 10px right 100px;
+  grid-column: 1 / 3;
+}
+
+.card:nth-of-type(2) {
+  background-color: hsl(217, 19%, 35%);
+  color: #fff;
+}
+
+.card:nth-of-type(3) {
+  color: hsl(0, 0%, 7%);
+  background-color: white;
+  grid-column: 1 / 2;
+}
+
+.card:nth-of-type(4) {
+  color: #fff;
+  background-color: hsl(219, 29%, 14%);
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+.card:nth-of-type(5) {
+  color: hsl(0, 0%, 7%);
+  background-color: white;
+  grid-column: 4;
+  grid-row: 1 / 3;
+}
+
+footer {
+  text-align: center;
+}
+
+@media(max-width: 758px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .card:nth-of-type(4) {
+  grid-column: 1;
+}
+
+.card:nth-of-type(5) {
+  grid-column: 1;
+  grid-row: 5;
+ 
+}
+
+.card:nth-of-type(1) {
+  grid-column: 1;
+}
+}
