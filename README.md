@@ -34,27 +34,10 @@ CSS Media Queries
 
 Google Fonts
 
-Project Structure
-
-testimonials-grid-section/
-│
-├── index.html
-├── style.css
-├── README.md
-│
-└── images/
-    ├── bg-pattern-quotation.svg
-    ├── image-daniel.jpg
-    ├── image-jonathan.jpg
-    ├── image-jeanette.jpg
-    ├── image-patrick.jpg
-    └── image-kira.jpg
 
 Screenshot
 
-Add a screenshot of your completed project here:
-
-![Testimonials Grid Section Screenshot](./images/screenshot.png)
+![Testimonials Grid Section Screenshot](./testimonials-grid-section-main/images/screenshot.png)
 
 What I Learned
 
